@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
   min-height: 100vh;
 }
 
@@ -226,4 +225,22 @@
   to {
     transform: rotate(0deg);
   }
+}
+
+.header{
+  width: 95%;
+  margin: 25px;
+  border: 1px solid white;
+  border-radius: 45px;
+  background-color: #ffffff50;
+  padding: 10px 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navLink{
+  color: white;
+  text-transform: uppercase;
+  margin: 0 1em;
 }
