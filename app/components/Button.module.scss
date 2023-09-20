@@ -1,0 +1,27 @@
+$lightGreen: #00a79d;
+$lightBlue: #00fee6;
+$darkBlue: #020413;
+$mainBlu: #0177fd;
+
+.button{
+    background: $lightGreen;
+    border: 1px solid $lightBlue;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 20px;
+    transition: 0.5s ease color;
+    transition: 0.5s ease background;
+
+    &:hover,
+    &:focus{
+        background: $lightBlue;
+        color: $darkBlue;
+        transition: 0.5s ease color;
+        transition: 0.5s ease background;
+    }
+
+    &:focus{
+        outline-offset: -3px;
+        outline: 1px dashed $darkBlue;
+    }
+}

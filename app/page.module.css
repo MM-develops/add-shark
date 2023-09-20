@@ -104,7 +104,7 @@
 }
 
 .logo {
-  position: relative;
+  width: 29px;
 }
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
@@ -243,4 +243,20 @@
   color: white;
   text-transform: uppercase;
   margin: 0 1em;
+  transition: 0.5s ease color;
+}
+
+.navLink:hover{
+  color: blue;
+  transition: 0.5s ease color;
+}
+
+.navLink:focus{
+  color: blue;
+  border-bottom: 1px solid blue;
+  outline: none;
+}
+
+.uppercase{
+  text-transform: uppercase;
 }

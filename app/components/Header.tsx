@@ -7,9 +7,9 @@ import Image from "next/image"
 export const Header = () => {
     return <header className={styles.header}>
         <Image
-            src="/vercel.svg"
-            alt="Vercel Logo"
-            className={styles.vercelLogo}
+            src="/adshark_logo_navbar.svg"
+            alt="Addshark home page"
+            className={styles.logo}
             width={100}
             height={24}
             priority
@@ -18,7 +18,7 @@ export const Header = () => {
             <Link href="" className={styles.navLink}>Nosotros</Link>
             <Link href="" className={styles.navLink}>Servicios</Link>
             <Link href="" className={styles.navLink}>Contacto</Link>
-            <Button>hello</Button>
+            <Button className={styles.uppercase}>Quiero trabajar con ustedes</Button>
         </nav>
     </header>
 }
