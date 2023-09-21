@@ -1,27 +1,49 @@
-$lightGreen: #00a79d;
-$lightBlue: #00fee6;
-$darkBlue: #020413;
-$mainBlu: #0177fd;
+@import './globals.scss';
 
 .button{
-    background: $lightGreen;
-    border: 1px solid $lightBlue;
-    color: white;
+    border: 1px solid;
     padding: 6px 10px;
-    border-radius: 20px;
+    border-radius: 10px;
     transition: 0.5s ease color;
     transition: 0.5s ease background;
+    font-family: $poppins;
+    font-weight: 500;
 
     &:hover,
     &:focus{
-        background: $lightBlue;
-        color: $darkBlue;
         transition: 0.5s ease color;
         transition: 0.5s ease background;
     }
 
     &:focus{
         outline-offset: -3px;
-        outline: 1px dashed $darkBlue;
+        outline: 1px dashed;
+    }
+
+    &.primary{
+        color: white;
+        background: $lightGreen;
+        border-color: $lightBlue;
+
+        &:hover,
+        &:focus{
+            background: $lightBlue;
+            color: $darkBlue;
+        }
+
+        &:focus{
+            outline-color: $darkBlue;
+        }
+    }
+
+    &.secondary {
+        color: $mainBlue;
+        border-color: transparent;
+        background-color: #ffffff75;
+
+        &:hover,
+        &:focus {
+            background-color: #ffffffbf;
+        }
     }
 }

@@ -1,0 +1,67 @@
+@import './globals.scss';
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+    padding: 50px 10%;
+    color: white;
+    background-image: url('/footer.png');
+    background-position: 0% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    h2{
+        font-family: $roboto;
+        font-size: 46px;
+    }
+}
+
+.leftBox {
+    max-width: 50%;
+}
+
+.copyRight{
+    font-family: $poppins;
+    font-weight: 100;
+    font-size: 12px;
+    margin-top: 50px;
+}
+
+.footerNav {
+    display: flex;
+    flex-direction: column;
+    
+    a {
+        @include white-link;
+        font-size: 20px;
+        margin: 15px 0;
+        width: fit-content;
+    }
+}
+
+.background {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/footer_bg.png');
+    background-position: 50% 0%;
+    z-index: -1;
+}
+
+.backgroundFx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/footer_fx.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
