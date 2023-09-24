@@ -227,36 +227,101 @@
   }
 }*/
 
-.header{
-  width: 90%;
-  margin: 25px auto;
-  border: 1px solid white;
-  border-radius: 45px;
-  background-color: #ffffff50;
-  padding: 10px 2em;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.navLink{
-  color: white;
-  text-transform: uppercase;
-  margin: 0 1em;
-  transition: 0.5s ease color;
-}
-
-.navLink:hover{
-  color: blue;
-  transition: 0.5s ease color;
-}
-
-.navLink:focus{
-  color: blue;
-  border-bottom: 1px solid blue;
-  outline: none;
-}
+@import './components/globals.scss';
 
 .uppercase{
   text-transform: uppercase;
+}
+
+.row{
+  background-color: $mainBlue;
+  color: white;
+  padding: 50px 10%;
+  background-image: url('/rock_bg.png');
+  background-repeat: no-repeat;
+  background-position: 50% 135%;
+  background-size: 100% auto;
+  h1 {
+    text-align: center;
+    font-size: 60px;
+    font-family: $roboto;
+  }
+}
+
+.numberRow {
+  display: flex;
+  justify-content: space-around;
+  margin: 80px 0;
+}
+.numberSign {
+  font-size: 30px;
+  font-family: $roboto;
+  font-weight: 900;
+  width: 202px;
+  margin: 0 30px;
+  span {
+    font-size: 80px;
+  }
+}
+
+.rock1 {
+  position: absolute;
+  background-image: url('/rock1.png');
+  background-size: cover;
+  width: 37%;
+  height: 80%;
+  top: calc(20% + 50px);
+  right: -12.6%;
+}
+.rock2 {
+  position: absolute;
+  background-image: url("/rock2.png");
+  background-size: cover;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  width: 39%;
+  height: 80%;
+  top: calc(20% + 50px);
+  left: -13%;
+}
+
+.row2 {
+  background-color: $mainBlue;
+  padding: 50px 10%;
+
+  h3 {
+    margin-top: 0;
+    font-family: $poppins;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+  }
+}
+
+.row3 {
+  padding: 50px 10%;
+
+  h3 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .services {
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .pill {
+    width: calc(50% - 15px);
+
+    /*&:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }*/
+  }
 }

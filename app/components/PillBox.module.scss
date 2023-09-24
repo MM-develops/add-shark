@@ -1,0 +1,38 @@
+@import './globals.scss';
+
+.main {
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 5% 10%;
+    position: relative;
+
+    &.primary {
+        color: black;
+        background-color: #ffffffcc;
+        border-color: white;
+    }
+
+    &.blue {
+        color: white;
+        background-color: $mainBlue;
+        border-color: white;
+        filter: drop-shadow(2px 4px 10px #0000009f);
+
+        h3 {
+            color: $lightBlue;
+        }
+    }
+
+    h3 {
+        margin-top: 0;
+        font-family: $poppins;
+        text-align: center;
+        font-size: 30px;
+      }
+    
+      p{
+        font-weight: 300;
+        font-family: $roboto;
+        font-size: 22px;
+      }
+}

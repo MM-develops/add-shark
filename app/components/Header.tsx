@@ -1,6 +1,6 @@
 import Link from "next/link"
 import React from "react"
-import styles from './../page.module.css'
+import styles from './Header.module.scss'
 import { Button } from './Button'
 import Image from "next/image"
 
@@ -18,7 +18,7 @@ export const Header = () => {
             <Link href="" className={styles.navLink}>Nosotros</Link>
             <Link href="" className={styles.navLink}>Servicios</Link>
             <Link href="" className={styles.navLink}>Contacto</Link>
-            <Button className={styles.uppercase}>Quiero trabajar con ustedes</Button>
+            <Button className={styles.navLink}>Quiero trabajar con ustedes</Button>
         </nav>
     </header>
 }

@@ -1,0 +1,35 @@
+@import './globals.scss';
+
+.header{
+    width: 90%;
+    margin: 25px auto;
+    border: 1px solid white;
+    border-radius: 45px;
+    background-color: #ffffff50;
+    padding: 10px 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navLink{
+    color: white;
+    text-transform: uppercase;
+    margin: 0 1em;
+    transition: 0.5s ease color;
+    font-family: $poppins;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.navLink:hover{
+    color: blue;
+    transition: 0.5s ease color;
+}
+
+.navLink:focus{
+    color: blue;
+    border-bottom: 1px solid blue;
+    outline: none;
+}  

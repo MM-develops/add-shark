@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto:wght@300;900&display=swap');
 
 $poppins: 'Poppins', sans-serif;
 $roboto: 'Roboto', sans-serif;
@@ -26,4 +26,13 @@ $mainBlue: #0177fd;
 
 @mixin white-link {
     @include link(white, $mainBlue);
+}
+
+.blockCenter{
+    margin:auto;
+    display: block;
+}
+.flexCenter{
+    display: flex;
+    justify-content: center;
 }
