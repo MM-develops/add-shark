@@ -2,8 +2,10 @@ import Image from 'next/image'
 import styles from './Home.module.scss'
 import { Header } from './components/Header'
 import { Footer } from './components/Footer'
+import { Row } from './components/Row'
 import { Button } from './components/Button'
 import { PillBox } from './components/PillBox'
+import { LogoGrid } from './components/LogoGrid'
 
 export default function Home() {
   return (
@@ -31,11 +33,8 @@ export default function Home() {
           <div className={styles.rock2}></div>
         </PillBox>
       </div>
-      <div className={styles.row2}>
-        <h3>Algunos de nuestros Sharks</h3>
-        <div></div>
-      </div>
-      <div className={styles.row3}>
+      <LogoGrid title="Algunos de nuestros Sharks" />
+      <Row>
         <h3>Entre tiburones nos ayudamos</h3>
         <div className={styles.services}>
           <PillBox type="blue" className={styles.pill}>
@@ -88,7 +87,7 @@ export default function Home() {
           </PillBox>
         </div>
         <Button className={styles.blockCenter}>Conoce más de AdShark</Button>
-      </div>
+      </Row>
       <Footer/>
     </main>
   )
