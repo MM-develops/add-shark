@@ -28,11 +28,25 @@
         font-family: $poppins;
         text-align: center;
         font-size: 30px;
-      }
+    }
+
+    h4{
+        color: $lightBlue;
+        text-align: left;
+        vertical-align: middle;
+        font-family: $poppins;
+        font-size: 20px;
+
+        img {
+            vertical-align: middle;
+            margin-right: 10px;
+            margin-left: -60px;
+        }
+    }
     
-      p{
-        font-weight: 300;
-        font-family: $roboto;
-        font-size: 22px;
-      }
+    p {
+      font-weight: 300;
+      font-family: $roboto;
+      font-size: 22px;
+    }
 }

@@ -26,7 +26,7 @@ export default function Home() {
           <h3>¡Bienvenido a AdShark Digital Agency!</h3>
           <p>Somos una agencia de publicidad que navega en las profundidades del océano digital para ayudar a las empresas a alcanzar su máximo potencial en línea. Somos un equipo de tiburones especializados en el marketing digital enfocándonos en los anuncios pagados.</p>
           <p>En Ad Shark, nuestro equipo está compuesto por expertos en publicidad en línea, estrategas de marketing, diseñadores gráficos y especialistas en análisis de datos, todos unidos en una sola dirección: impulsar el crecimiento y el éxito de nuestros clientes.</p>
-          <Button className={styles.blockCenter}>Conoce más de AdShark</Button>
+          <Button className={`${styles.blockCenter} $`}>Conoce más de AdShark</Button>
           <div className={styles.rock1}></div>
           <div className={styles.rock2}></div>
         </PillBox>
@@ -39,51 +39,51 @@ export default function Home() {
         <h3>Entre tiburones nos ayudamos</h3>
         <div className={styles.services}>
           <PillBox type="blue" className={styles.pill}>
-            <h3>
+            <h4>
               <Image
                 src="/ads.svg"
                 alt=""
-                width={70}
-                height={70}
+                width={50}
+                height={50}
               />
               Anuncios pagados / Anuncios en línea
-            </h3>
+            </h4>
             <p>Somos expertos en Anuncios Pagados, y nos gusta pensar en nosotros mismos como tiburones que nadan en el vasto océano de la publicidad en línea.</p>
           </PillBox>
           <PillBox type="blue" className={styles.pill}>
-            <h3>
+            <h4>
               <Image
                 src="/seo.svg"
                 alt=""
-                width={70}
-                height={70}
+                width={50}
+                height={50}
               />
               SEO (Search Engine Optimization)
-            </h3>
+            </h4>
             <p>Ofrecemos servicios de SEO para ayudar a las empresas a aumentar su tráfico web, mejorar su posición en los resultados de búsqueda y aumentar su presencia en línea.</p>
           </PillBox>
           <PillBox type="blue" className={styles.pill}>
-            <h3>
+            <h4>
               <Image
                 src="/emailmkt.svg"
                 alt=""
-                width={70}
-                height={70}
+                width={50}
+                height={50}
               />
               Email Marketing
-            </h3>
+            </h4>
             <p>Con nuestro servicio de Email Marketing ayudamos a las empresas a llegar a su audiencia de manera más directa.</p>
           </PillBox>
           <PillBox type="blue" className={styles.pill}>
-            <h3>
+            <h4>
               <Image
                 src="/socialmedia.svg"
                 alt=""
-                width={70}
-                height={70}
+                width={50}
+                height={50}
               />
               Manejo de redes sociales
-            </h3>
+            </h4>
             <p>Aumentamos la presencia de tu marca en línea, a través de la creación de contenido atractivo y relevante que conecte con tu audiencia.</p>
           </PillBox>
         </div>
