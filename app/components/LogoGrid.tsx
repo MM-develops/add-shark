@@ -8,7 +8,7 @@ const imageList = images.keys().map(image => images(image));
 export const LogoGrid = props => {
     return <div className={styles.main}>
         <h3>{props.title}</h3>
-        <div className={styles.gridcontainer}>
+        <div className={styles.gridContainer}>
             {imageList.map((image, index) => {
                 return <div className={styles.logoContainer}>
                     <Image 

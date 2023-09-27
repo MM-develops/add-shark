@@ -3,6 +3,7 @@ import { Header } from '../components/Header'
 import { PillBox } from '../components/PillBox'
 import { Button } from '../components/Button'
 import { Footer } from '../components/Footer'
+import { LogoGrid } from '../components/LogoGrid'
 
 export default function Nosotros() {
     return (
@@ -16,9 +17,7 @@ export default function Nosotros() {
             <div className={styles.row2}>
                 <p>Al igual que los tiburones en el oceano, en Ad Shark nos vemos rapidamente y de manera eficiente para ayudar a las empresas a crecer y alcanzar sus objetivos comerciales. Ofrecemos una amplia gama de servicios de marketing digital, como la gestion de redes sociales, email marketing, SEO y, por supuesto, anuncios pagados. Sin embargo, nuestra pasion y enfoque principal es la generacion de prospectos con anuncios pagados, ya que nos permiten llevar a nuestros clientes hacia el exito en linea</p>
             </div>
-            <div className={styles.row3}>
-                <h3>Algunos de nuestros sharks</h3>
-            </div>
+            <LogoGrid title="Algunos de nuestros sharks"/>
             <div className={styles.row4}>
                 <p>En Ad Shark, nuestro equipo esta compuesto por expertos en publicidad en line, estrategas de marketing, disenadores graficos y especialistas en analisis de datos, todos unidos en una sola direccion: impulsar el crecimiento y el exito de nuestros clientes</p>
                 <div className={styles.pillBoxGrid}>

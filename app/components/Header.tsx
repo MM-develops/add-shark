@@ -15,7 +15,7 @@ export const Header = () => {
             priority
         />
         <nav>
-            <Link href="" className={styles.navLink}>Nosotros</Link>
+            <Link href="/nosotros" className={styles.navLink}>Nosotros</Link>
             <Link href="" className={styles.navLink}>Servicios</Link>
             <Link href="" className={styles.navLink}>Contacto</Link>
             <Button className={styles.navLink}>Quiero trabajar con ustedes</Button>

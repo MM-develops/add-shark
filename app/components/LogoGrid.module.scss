@@ -4,20 +4,59 @@
     padding: 50px 0;
     background-color: $mainBlue;
     color: white;
+    padding-bottom: 650px;
 
     h3 {
-        padding: 0 10%;
+        padding: 0 10% 50px;
         text-align: center;
         font-family: $poppins;
+        font-size: 30px;
     }
 
 }
-.logoContainer {
-    width: 100px;
-    height: 100px;
+
+.gridContainer {
     position: relative;
+}
+
+.logoContainer {
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    animation-name: infiniteScroll;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    left: -250px;
 
     img {
         object-fit: contain;
     }
+}
+
+@for $i from 0 through 20 {
+    .logoContainer:nth-child(n + #{$i}) {
+      animation-delay: (-1.7s * $i);
+    }
+
+    .logoContainer:nth-child(3n + 0) {
+        top: 200px;
+        animation-direction: reverse;
+    }
+
+    .logoContainer:nth-child(3n + 1) {
+        top: 400px;
+    }
+  }
+  
+
+@keyframes infiniteScroll {
+    0%{
+        left: -250px;
+    }
+
+    100% {
+        left: calc(100vw + 250px);
+    }
+    
 }
