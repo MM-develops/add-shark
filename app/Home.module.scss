@@ -237,14 +237,14 @@
   background-color: $mainBlue;
   color: white;
   padding: 50px 10%;
-  background-image: url('/rock_bg.png');
-  background-repeat: no-repeat;
-  background-position: 50% 135%;
-  background-size: 100% auto;
+  overflow: hidden;
+  position: relative;
+
   h1 {
     text-align: center;
     font-size: 60px;
     font-family: $roboto;
+    margin-bottom: 50px;
   }
 }
 
@@ -262,6 +262,14 @@
   span {
     font-size: 80px;
   }
+}
+
+.pillTitle {
+  margin-bottom: 20px;
+}
+
+.pillButton {
+  margin-top: 35px;
 }
 
 .rock1 {
@@ -283,6 +291,17 @@
   height: 80%;
   top: calc(20% + 50px);
   left: -13%;
+}
+
+.rockBg {
+  position: absolute;
+  left: 0;
+  bottom: -55vw;
+  width: 100vw;
+  height: 51vw;
+  background-image: url('/rock_bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
   .services {
     margin: 50px 0;

@@ -24,11 +24,12 @@ export default function Home() {
             Campañas exitosas
           </p>
         </div>
+        <div className={styles.rockBg}></div>
         <PillBox>
-          <h3>¡Bienvenido a AdShark Digital Agency!</h3>
+          <h3 className={styles.pillTitle}>¡Bienvenido a AdShark Digital Agency!</h3>
           <p>Somos una agencia de publicidad que navega en las profundidades del océano digital para ayudar a las empresas a alcanzar su máximo potencial en línea. Somos un equipo de tiburones especializados en el marketing digital enfocándonos en los anuncios pagados.</p>
           <p>En Ad Shark, nuestro equipo está compuesto por expertos en publicidad en línea, estrategas de marketing, diseñadores gráficos y especialistas en análisis de datos, todos unidos en una sola dirección: impulsar el crecimiento y el éxito de nuestros clientes.</p>
-          <Button className={`${styles.blockCenter} $`}>Conoce más de AdShark</Button>
+          <Button className={`${styles.blockCenter} ${styles.pillButton}`}>Conoce más de AdShark</Button>
           <div className={styles.rock1}></div>
           <div className={styles.rock2}></div>
         </PillBox>
