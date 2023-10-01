@@ -5,7 +5,7 @@
     margin: 25px 5%;
     border: 1px solid white;
     border-radius: 45px;
-    background-color: #ffffff50;
+    background-color: #ffffff91;
     padding: 10px 2em;
     display: flex;
     align-items: center;
@@ -34,3 +34,8 @@
     border-bottom: 1px solid blue;
     outline: none;
 }  
+
+.header nav .navButton {
+    padding: 5px 20px;
+    text-transform: uppercase;
+}

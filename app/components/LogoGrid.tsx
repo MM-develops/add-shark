@@ -4,18 +4,21 @@ import Image from 'next/image';
 
 const images = require.context('../../public/logos', true);
 const imageList = images.keys().map(image => images(image));
+//console.log(images.keys())
 
 export const LogoGrid = props => {
     return <div className={`${styles.main} ${props.className}`}>
         <h3>{props.title}</h3>
         <div className={styles.gridContainer}>
             {imageList.map((image, index) => {
+                //console.log(image)
                 return <div className={styles.logoContainer}>
                     <Image 
                         key={index}
                         src={image.default}
-                        alt={}
+                        alt=""
                         fill
+                        loading="lazy"
                     />
                     </div>
             })}

@@ -15,17 +15,17 @@ export const Footer = () => {
         </div>
         <div>
             <nav className={styles.footerNav}>
-                <Link href="">Nosotros</Link>
-                <Link href="">Servicios</Link>
-                <Link href="">Contacto</Link>
+                <Link href="/nosotros">Nosotros</Link>
+                <Link href="/servicios">Servicios</Link>
+                <Link href="/contacto">Contacto</Link>
 
-                <Link href="">
+                <Link href="/">
                     <Image
                         src="/adshark_logo_footer.png"
                         alt="Add Shark home page"
                         width={100}
                         height={24}
-                        priority
+                        loading="lazy"
                     />
                 </Link>
             </nav>

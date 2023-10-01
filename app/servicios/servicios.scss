@@ -1,0 +1,29 @@
+@import '../components/globals.scss';
+
+.services-header {
+    width: 65%;
+    display: inline-block;
+    font-size: 60px;
+    font-family: $poppins;
+    line-height: 1.2em;
+    margin: 150px 0;
+}
+
+.service-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 100px;
+
+    .services-copy {
+        width: calc(100% - 330px);
+    }
+
+    h3 {
+        color: $darkBlue;
+        text-align: left !important;
+    }
+    p {
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+}

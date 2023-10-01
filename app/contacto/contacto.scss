@@ -1,0 +1,39 @@
+@import '../components/globals.scss';
+
+.contact-header {
+    font-size: 60px;
+    font-family: $poppins;
+    text-align: center;
+    line-height: 1em;
+    margin: 250px 0 20px;
+}
+
+.contact-tag {
+    font-family: $roboto;
+    color: $lightBlue;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+label {
+    display: block;
+    font-family: $roboto;
+    font-size: 20px;
+}
+input,
+select,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 10px 10px;
+    font-family: $roboto;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.contact-send {
+    margin: 50px auto 0;
+    display: block;
+    width: 70%;
+}
