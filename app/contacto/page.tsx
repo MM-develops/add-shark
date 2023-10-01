@@ -8,7 +8,7 @@ import { Button } from '../components/Button';
 export default function Contact() {
     return <main>
         <Header/>
-        <Row color="blue">
+        <Row color="blue" className="ocean-background">
             <h1 className="contact-header">¡Descubramos las oportunidades que el océano digital tiene para ti!</h1>
             <p className="contact-tag">¡Nuestro equipo de tiburones del marketing está esperando para hundirse contigo en las profundidades del marketing digital y ayudarte a conquistar tu mercado!</p>
         </Row>
@@ -34,6 +34,6 @@ export default function Contact() {
                 <Button className="contact-send">Enviar</Button>
             </PillBox>
         </Row>
-        <Footer/>
+        <Footer background="blue"/>
     </main>
 }

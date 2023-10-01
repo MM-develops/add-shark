@@ -10,10 +10,12 @@ export default function Servicios() {
     return (
         <main>
             <Header />
+            <div className='coral-wall'></div>
+            <div className='sharks'></div>
             <Row color="blue">
                 <h1 className="services-header">Navega con Ad Shark en las profundidades del océano digital</h1>
             </Row>
-            <Row color="blue">
+            <Row color="blue" className="rocky-row">
                 <PillBox>
                     <div className='service-container'>
                         <Image
@@ -68,8 +70,10 @@ export default function Servicios() {
                         />
                     </div>
                 </PillBox>
+                <div className={"rock1"}></div>
+                <div className={"rock2"}></div>
             </Row>
-            <Footer/>
+            <Footer background="blue"/>
         </main>
     )
 }

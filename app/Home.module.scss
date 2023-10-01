@@ -303,15 +303,16 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-  .services {
-    margin: 50px 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
 
-  .pill {
-    width: calc(50% - 15px);
+.services {
+  margin: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.pill {
+  width: calc(50% - 15px);
 
     /*&:first-child {
       margin-top: 0;
@@ -320,4 +321,38 @@
     &:last-child {
       margin-bottom: 0;
     }*/
+}
+
+  @media (max-width: $mobileSize) {
+    .row {
+      padding-top: 0;
+      h1 {
+        font-size: 35px;
+        margin-top: 150px;
+      }
+    }
+
+    .numberSign {
+      font-size: 16px;
+      width: 80px;
+      margin: 0 30px;
+      span {
+        font-size: 30px;
+      }
+    }
+
+    .pillTitle {
+      margin-bottom: 10px;
+    }
+
+    .pillButton {
+      margin-top: 15px;
+    }
+
+    .services {
+      flex-direction: column;
+    }
+    .pill {
+      width: 100%;
+    }
   }

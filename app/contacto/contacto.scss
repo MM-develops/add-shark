@@ -1,5 +1,9 @@
 @import '../components/globals.scss';
 
+.ocean-background {
+    background-image: url('/as_oceanbg.png');
+    background-size: cover;
+}
 .contact-header {
     font-size: 60px;
     font-family: $poppins;

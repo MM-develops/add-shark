@@ -7,6 +7,8 @@ $lightBlue: #27e4ea;
 $darkBlue: #262262;
 $mainBlue: #0177fd;
 
+$mobileSize: 764px;
+
 @mixin link($color, $hoverColor) {
     transition: 0.5s ease color;
     text-decoration: none;

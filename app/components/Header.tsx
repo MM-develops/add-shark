@@ -5,6 +5,8 @@ import { Button } from './Button'
 import Image from "next/image"
 
 export const Header = () => {
+
+    const hamburgerMenu = <div className={styles.hamButton}></div>
     return <header className={styles.header}>
         <Link href="/">
             <Image
@@ -16,7 +18,8 @@ export const Header = () => {
                 priority
             />
         </Link>
-        <nav>
+        {hamburgerMenu}
+        <nav className={styles.desktopNav}>
             <Link href="/nosotros" className={styles.navLink}>Nosotros</Link>
             <Link href="/servicios" className={styles.navLink}>Servicios</Link>
             <Link href="/contacto" className={styles.navLink}>Contacto</Link>

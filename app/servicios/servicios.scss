@@ -7,6 +7,29 @@
     font-family: $poppins;
     line-height: 1.2em;
     margin: 150px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.coral-wall {
+    height: 100vh;
+    width: 40vw;
+    background-image: url('/arrecife_wall1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+}
+
+.sharks {
+    width: 50vw;
+    height: 50vh;
+    position: absolute;
+    top: 64px;
+    background-image: url('/adshark_sharks2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: -19vw;
 }
 
 .service-container {
@@ -27,3 +50,29 @@
         margin-bottom: 30px;
     }
 }
+
+.rocky-row {
+    position: relative;
+    padding-top: 0 !important;
+}
+
+.rock1 {
+    position: absolute;
+    background-image: url('/rock1.png');
+    background-size: cover;
+    width: 37%;
+    height: 80%;
+    top: calc(20% + 50px);
+    right: -12.6%;
+  }
+  .rock2 {
+    position: absolute;
+    background-image: url("/rock2.png");
+    background-size: cover;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    width: 39%;
+    height: 80%;
+    top: calc(20% + 50px);
+    left: -13%;
+  }
