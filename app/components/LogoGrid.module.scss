@@ -1,7 +1,7 @@
 @import './globals.scss';
 
 .main {
-    padding: 100px 0;
+    padding-top: 100px;
     background-image: url('/section_2.png');
     background-size: cover;
     color: white;
@@ -51,7 +51,35 @@
         top: 400px;
     }
   }
-  
+
+@media (max-width: $mobileSize) {
+    .main {
+        padding-bottom: 440px;
+
+        h3 {
+            font-size: 20px;;
+        }
+    }
+    .logoContainer {
+        width: 100px;
+        height: 100px;
+    }
+
+    @for $i from 0 through 20 {
+        .logoContainer:nth-child(n + #{$i}) {
+          animation-delay: (-1.7s * $i);
+        }
+    
+        .logoContainer:nth-child(3n + 0) {
+            top: 110px;
+            animation-direction: reverse;
+        }
+    
+        .logoContainer:nth-child(3n + 1) {
+            top: 220px;
+        }
+    }    
+}
 
 @keyframes infiniteScroll {
     0%{

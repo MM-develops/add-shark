@@ -10,10 +10,10 @@ export const Footer = props => {
         <div className={styles.background}></div>
         <div className={styles.backgroundFx}></div>
         <div className={styles.backgroundCoral}></div>
+        <div className={styles.footerContent}>
         <div className={styles.leftBox}>
             <h2>Déjanos ser tu guía en este océano digital</h2>
             <Button type="secondary">&iexcl;Contactanos&#33;</Button>
-            <p className={styles.copyRight}>&copy; Ad shark Digital Agency 2023.</p>
         </div>
         <div className={styles.rightBox}>
             <nav className={styles.footerNav}>
@@ -32,5 +32,7 @@ export const Footer = props => {
                 </Link>
             </nav>
         </div>
+        </div>
+        <p className={styles.copyRight}>&copy; Ad shark Digital Agency 2023.</p>
     </footer>
 }

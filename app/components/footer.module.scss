@@ -1,13 +1,17 @@
 @import './globals.scss';
 
 .footer{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10%;
     padding: 50px 10%;
     color: white;
     position: relative;
+
+    .footerContent {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10%;
+        position: relative;
+    }
 
     &.blue {
         background-color: $mainBlue;
@@ -33,6 +37,7 @@
     font-weight: 100;
     font-size: 12px;
     margin-top: 50px;
+    position: relative;
 }
 
 .footerNav {
@@ -84,6 +89,35 @@
     animation-timing-function: ease;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+}
+
+@media (max-width: $mobileSize){
+    .footer {
+        .footerContent {
+            flex-direction: column;
+        }
+        h2{
+            font-size: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        button {
+            display: block;
+            margin: auto;
+        }
+    }
+
+    .leftBox {
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .copyRight {
+        text-align: center;
+    }
+    .backgroundFx {
+        animation-duration: 50s;
+    }
 }
 
 

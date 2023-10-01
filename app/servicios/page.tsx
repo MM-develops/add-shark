@@ -12,7 +12,7 @@ export default function Servicios() {
             <Header />
             <div className='coral-wall'></div>
             <div className='sharks'></div>
-            <Row color="blue">
+            <Row color="blue" className="services-main-row">
                 <h1 className="services-header">Navega con Ad Shark en las profundidades del océano digital</h1>
             </Row>
             <Row color="blue" className="rocky-row">

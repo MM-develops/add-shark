@@ -20,6 +20,7 @@
     text-align: center;
     margin-bottom: 100px;
 }
+
 label {
     display: block;
     font-family: $roboto;
@@ -40,4 +41,38 @@ textarea {
     margin: 50px auto 0;
     display: block;
     width: 70%;
+}
+
+@media (max-width: $mobileSize) {
+    .ocean-background {
+        background-position: center;
+    }
+    .contact-header {
+        font-size: 25px;
+        line-height: 1.3em;
+        margin: 150px 0 20px;
+    }
+
+    .contact-tag {
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+
+    label {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    input,
+    select,
+    textarea {
+        padding: 5px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+    .contact-send {
+        margin-top: 20px;
+        width: 100%;
+    }
 }

@@ -22,14 +22,14 @@
 }
 
 .sharks {
-    width: 50vw;
+    width: 30vw;
     height: 50vh;
     position: absolute;
     top: 64px;
+    right: 0;
     background-image: url('/adshark_sharks2.png');
-    background-size: contain;
+    background-size: 50vw auto;
     background-repeat: no-repeat;
-    right: -19vw;
 }
 
 .service-container {
@@ -75,4 +75,44 @@
     height: 80%;
     top: calc(20% + 50px);
     left: -13%;
+  }
+
+  @media (max-width: $mobileSize) {
+    .services-header {
+        width: 100%;
+        font-size: 30px;
+    }
+    .coral-wall {
+        height: 100vh;
+        width: 100vw;
+        background-size: cover;        
+    }
+    .service-container {
+        flex-direction: column;
+        margin-top: 50px;
+
+        &:nth-child(2n) {
+            flex-direction: column-reverse;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    
+        .services-copy {
+            width: 100%;
+        }
+    
+        h3 {
+            color: $darkBlue;
+            text-align: left !important;
+        }
+    }
+
+    .sharks {
+        width: 100vw;
+        height: 70vh;
+        background-size: 50vw auto;
+        background-position: 100% 0;
+    }
   }
