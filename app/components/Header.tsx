@@ -17,7 +17,7 @@ export const Header = () => {
             <Link href="/nosotros" className={styles.navLink} onClick={onToggleClick}>Nosotros</Link>
             <Link href="/servicios" className={styles.navLink} onClick={onToggleClick}>Servicios</Link>
             <Link href="/contacto" className={styles.navLink} onClick={onToggleClick}>Contacto</Link>
-            <Link href="/contacto"><Button className={styles.navButton} onClick={onToggleClick}>Quiero trabajar con ustedes</Button></Link>
+            <Link href="/contacto" onClick={onToggleClick}><Button className={styles.navButton}>Quiero trabajar con ustedes</Button></Link>
         </nav>
     </div>
 

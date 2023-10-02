@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import styles from './footer.module.scss'
 
-export const Footer = props => {
+export const Footer = (props: { background?: string }) => {
     const backgroundColor = props.background ? props.background : 'white';
     return <footer className={`${styles.footer} ${styles[backgroundColor]}`}>
         <div className={styles.background}></div>

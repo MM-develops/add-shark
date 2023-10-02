@@ -56,16 +56,16 @@ export default function Nosotros() {
                 <p className={styles.secondP}>En el océano digital, la competencia es feroz y sólo los más fuertes sobreviven. En Ad Shark, estamos comprometidos a ayudarte a sobresalir en tu mercado y convertirte en un líder en tu industria. Juntos, podemos hacer que tu empresa destaque entre las olas y conquistar nuevas profundidades</p>
                 <div className={styles.secondPillBoxGrid}>
                     <PillBox type="shadow">
-                        <b>"Gracias al equipo de Ad Shark, hemos identificado tendencias e insights valiosos que aplican en nuestra industria, el dia de hoy tenemos presencia digital y clientes en todo Estados Unidos gracias a las campañas que hemos realizado en conjunto."</b>
+                        <b>&quot;Gracias al equipo de Ad Shark, hemos identificado tendencias e insights valiosos que aplican en nuestra industria, el dia de hoy tenemos presencia digital y clientes en todo Estados Unidos gracias a las campañas que hemos realizado en conjunto.&quot;</b>
                         <span>Luis Felipe Osuna, Co-founder<br/>Urban Capital</span>
                     </PillBox>
                     <PillBox type="shadow">
-                        <b>"Gracias al equipo de Ad Shark, hemos identificado tendencias e insights valiosos que aplican en nuestra industria, el dia de hoy tenemos presencia digital y clientes en todo Estados Unidos gracias a las campañas que hemos realizado en conjunto."</b>
-                        <span>Luis Felipe Osuna, Co-founder<br/>Urban Capital</span>
+                        <b>&quot;Ad Shark Digital es de las pocas empresas con las que hemos tratado en donde puede comprobar de forma medible los resultados que nos genera. Gracias a sus anuncios pagados en linea, hemos aumentado constantemente nuestra matricula en nuestras insitituciones educativas.&quot;</b>
+                        <span>Jorge Velasquez, Director Administrativo<br/>Colegio Real de Minas</span>
                     </PillBox>
                     <PillBox type="shadow">
-                        <b>"Gracias al equipo de Ad Shark, hemos identificado tendencias e insights valiosos que aplican en nuestra industria, el dia de hoy tenemos presencia digital y clientes en todo Estados Unidos gracias a las campañas que hemos realizado en conjunto."</b>
-                        <span>Luis Felipe Osuna, Co-founder<br/>Urban Capital</span>
+                        <b>&quot;Tenemos una relacion laboral de casi 3 años, desde el principio Ad Shark ha sido una parte fundamental en nuestras estrategias y planes comerciales para el crecimiento de la marca. Han manejado para nosotros todas nuestras campañas de generación de prospectos, asi como el analisis y la interpretación de toda a la analítica  de algoritmos de las plataformas digitales para nuevas zonas de interés y áreas con oportunidad de expansion.&quot;</b>
+                        <span>Fernando Arredondo, Director de Expansión y Crecimiento<br/>SIMAS Farmacias</span>
                     </PillBox>
                 </div>
             </Row>
