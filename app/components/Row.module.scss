@@ -2,7 +2,7 @@
 
 .row {
     padding: 50px 10%;
-    font-family: $roboto;
+    font-family: $body;
 
     &.blue {
         background-color: $mainBlue;
@@ -10,7 +10,7 @@
     }
 
     h3 {
-        font-family: $poppins;
+        font-family: $heading;
         text-align: center;
         font-size: 30px;
       }

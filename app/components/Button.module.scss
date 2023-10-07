@@ -1,14 +1,20 @@
 @import './globals.scss';
 
+
+a.button{
+    @include white-link;
+    width: fit-content;
+}
 .button{
     border: 1px solid;
     padding: 15px 25px;
     border-radius: 20px;
     transition: 0.5s ease color;
     transition: 0.5s ease background;
-    font-family: $poppins;
+    font-family: $heading;
     font-weight: 500;
     font-size: 20px;
+    display: inline-block;
 
     &:hover,
     &:focus{
@@ -23,17 +29,14 @@
 
     &.primary{
         color: white;
-        background: $lightGreen;
-        border-color: $lightBlue;
+        border-color: darken($color: $yellow, $amount: 2);
+        background-color: $yellow;
 
         &:hover,
-        &:focus{
-            background: $lightBlue;
-            color: $darkBlue;
-        }
-
-        &:focus{
-            outline-color: $darkBlue;
+        &:focus {
+            background-color: $lightGreen;
+            border-color: $lightBlue;
+            color: $lightBlue;
         }
     }
 

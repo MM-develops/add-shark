@@ -31,17 +31,18 @@
 
     h3 {
         margin-top: 0;
-        font-family: $poppins;
+        font-family: $heading;
         text-align: center;
         font-size: 30px;
     }
 
     h4{
-        color: $lightBlue;
+        color: $lightGreen;
         text-align: left;
         vertical-align: middle;
-        font-family: $poppins;
+        font-family: $heading;
         font-size: 20px;
+        margin-bottom: 15px;
 
         img {
             vertical-align: middle;
@@ -52,7 +53,7 @@
     
     p {
       font-weight: 300;
-      font-family: $roboto;
+      font-family: $body;
       font-size: 22px;
     }
 }

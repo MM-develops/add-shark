@@ -1,11 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto:wght@300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;900&family=Roboto:wght@300;400;500;900&display=swap');
 
-$poppins: 'Poppins', sans-serif;
-$roboto: 'Roboto', sans-serif;
-$lightGreen: #00a79d;
-$lightBlue: #27e4ea;
-$darkBlue: #262262;
-$mainBlue: #0177fd;
+/* fonts */
+$heading: 'Epilogue', sans-serif;
+$body: 'Roboto', sans-serif;
+
+/* Colors */
+$black: #030D24;
+$darkBlue: #072367;
+$mainBlue: #0C46EB;
+$lightBlue: #72A9F8;
+$lightGreen: #84FaF8;
+$yellow: #E8C545;
+
 
 $mobileSize: 764px;
 
@@ -28,6 +34,15 @@ $mobileSize: 764px;
 
 @mixin white-link {
     @include link(white, $mainBlue);
+}
+
+@mixin blue-link {
+    @include link($mainBlue, $lightBlue);
+}
+
+@mixin body-font {
+    font-family: $body;
+    font-size: 20px;
 }
 
 .blockCenter{

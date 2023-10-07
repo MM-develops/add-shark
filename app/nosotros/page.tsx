@@ -1,7 +1,7 @@
 import styles from './nosotros.module.scss'
 import { Header } from '../components/Header'
 import { PillBox } from '../components/PillBox'
-import { Button } from '../components/Button'
+import { AnchorButton, Button } from '../components/Button'
 import { Footer } from '../components/Footer'
 import { Row } from '../components/Row'
 import Image from 'next/image'
@@ -21,7 +21,7 @@ export default function Nosotros() {
             </Row>
             <LogoGrid className={styles.logoGrid} title="Nuestro grupo de sharks"/>
             <Row className={styles.row4}>
-                <p className={styles.whiteText}>En Ad Shark, nuestro equipo esta compuesto por expertos en publicidad en line, estrategas de marketing, disenadores graficos y especialistas en analisis de datos, todos unidos en una sola direccion: impulsar el crecimiento y el exito de nuestros clientes</p>
+                <p className={styles.whiteText}>En Ad Shark, nuestro equipo está compuesto por expertos en publicidad en línea, estrategas de marketing, diseñadores gráficos y especialistas en análisis de datos, todos unidos en una sola dirección: impulsar el crecimiento y el éxito de nuestros clientes.</p>
                 <div className={styles.pillBoxGrid}>
                     <PillBox type="blue">
                         <Image
@@ -52,7 +52,7 @@ export default function Nosotros() {
                         />
                     </PillBox>
                 </div>
-                <Button className={styles.blockCenter}>Conoce mas de nuestros servicios</Button>
+                <AnchorButton href="/servicios" className={styles.blockCenter}>Conoce más de nuestros servicios</AnchorButton>
                 <p className={styles.secondP}>En el océano digital, la competencia es feroz y sólo los más fuertes sobreviven. En Ad Shark, estamos comprometidos a ayudarte a sobresalir en tu mercado y convertirte en un líder en tu industria. Juntos, podemos hacer que tu empresa destaque entre las olas y conquistar nuevas profundidades</p>
                 <div className={styles.secondPillBoxGrid}>
                     <PillBox type="shadow">
