@@ -3,36 +3,45 @@ import { Button } from './Button'
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from './footer.module.scss'
+import { Waves } from './Graphics'
 
 export const Footer = (props: { background?: string }) => {
     const backgroundColor = props.background ? props.background : 'white';
-    return <footer className={`${styles.footer} ${styles[backgroundColor]}`}>
-        <div className={styles.background}></div>
-        <div className={styles.backgroundFx}></div>
-        <div className={styles.backgroundCoral}></div>
-        <div className={styles.footerContent}>
-        <div className={styles.leftBox}>
-            <h2>Déjanos ser tu guía en este océano digital</h2>
-            <Button type="secondary">&iexcl;Contactanos&#33;</Button>
-        </div>
-        <div className={styles.rightBox}>
-            <nav className={styles.footerNav}>
-                <Link href="/nosotros">Nosotros</Link>
-                <Link href="/servicios">Servicios</Link>
-                <Link href="/contacto">Contacto</Link>
-
-                <Link href="/">
-                    <Image
-                        src="/adshark_logo_footer.png"
-                        alt="Add Shark home page"
-                        width={100}
-                        height={24}
-                        loading="lazy"
-                    />
-                </Link>
-            </nav>
-        </div>
-        </div>
-        <p className={styles.copyRight}>&copy; Ad shark Digital Agency 2023.</p>
-    </footer>
+    return <>
+        <Waves className={styles.waves}/>
+        <footer className={`${styles.footer} ${styles[backgroundColor]}`}>
+            <div className={styles.backgroundFx}></div>
+            <div className={styles.footerContent}>
+                <div className={styles.leftBox}>
+                    <h2>Déjanos ser tu guía en este océano digital</h2>
+                    <Button type="secondary">&iexcl;Contactanos&#33;</Button>
+                </div>
+                <div className={styles.divider}></div>
+                <div className={styles.rightBox}>
+                    <nav className={styles.footerNav}>
+                        <Link href="/">
+                            <Image
+                                src="/adshark_logo_footer.png"
+                                alt="Add Shark home page"
+                                width={250}
+                                height={54}
+                                loading="lazy"
+                            />
+                        </Link>
+                        <Link href="/nosotros">Nosotros</Link>
+                        <Link href="/servicios">Servicios</Link>
+                        <Link href="/contacto">Contacto</Link>
+                    </nav>
+                </div>
+            </div>
+            <p className={styles.copyRight}>&copy; Ad shark Digital Agency 2023.</p>
+            <div className={styles.footerShark}>
+                <Image
+                    src="/footer.svg"
+                    alt=""
+                    fill
+                />
+            </div>
+        </footer>
+    </>
 }

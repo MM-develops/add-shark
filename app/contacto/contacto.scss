@@ -13,12 +13,18 @@
 }
 
 .contact-tag {
-    font-family: $body;
-    color: $lightBlue;
+    color: $lightGreen;
     font-weight: 600;
-    font-size: 25px;
     text-align: center;
     margin-bottom: 100px;
+}
+
+.form-header {
+    font-family: $heading;
+    font-size: 35px;
+    color: $darkBlue;
+    text-align: center;
+    margin-bottom: 60px;
 }
 
 label {

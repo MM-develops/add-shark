@@ -1,13 +1,20 @@
 @import './globals.scss';
 
+.waves {
+    fill: $mainBlue;
+    width: calc(100% + 2px);
+    margin-bottom: -5px;
+    margin-left: -2px;
+}
 .footer{
-    padding: 50px 10%;
+    padding: 0 10% 100px;
     color: white;
     position: relative;
+    background-color: $mainBlue;
+    background: linear-gradient(0deg, $black 0%, $darkBlue 50%, $mainBlue 100%);
 
     .footerContent {
         display: flex;
-        align-items: center;
         justify-content: space-between;
         gap: 10%;
         position: relative;
@@ -18,14 +25,28 @@
     }
 
     h2{
-        font-family: $body;
-        font-size: 46px;
+        font-family: $heading;
+        font-size: 65px;
+        margin-bottom: 50px;
+    }
+
+    .footerShark{
+        position: absolute;
+        bottom: 20px;
+        width: 50vw;
+        height: 9vw;
+        right: 17vw;
     }
 }
 
 .leftBox {
     max-width: 50%;
     position: relative;
+}
+
+.divider {
+    width: 1px;
+    background-color: white;
 }
 
 .rightBox {
@@ -36,43 +57,24 @@
     font-family: $heading;
     font-weight: 100;
     font-size: 12px;
-    margin-top: 50px;
+    margin-top: 150px;
     position: relative;
 }
 
 .footerNav {
     display: flex;
     flex-direction: column;
+    align-items: center;
     
     a {
         @include white-link;
+        font-family: $heading;
+        font-weight: 600;
         font-size: 20px;
         margin: 15px 0;
         width: fit-content;
         text-transform: uppercase;
     }
-}
-
-.background {
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('/footer_bg.png');
-    background-position: 50% 0%;
-    z-index: -1;
-}
-.backgroundCoral {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-image: url('/footer.png');
-    background-position: 0% 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .backgroundFx {
@@ -81,6 +83,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+    opacity: 0.5;
     background-image: url('/footer_fx.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -93,6 +96,8 @@
 
 @media (max-width: $mobileSize){
     .footer {
+        padding-bottom: 50px;
+
         .footerContent {
             flex-direction: column;
         }
@@ -105,15 +110,43 @@
             display: block;
             margin: auto;
         }
+
+        .footerNav {
+            border: 2px solid white;
+            border-radius: 15px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+
+            a{
+                &:first-child{
+                    width: 150px;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+
+        .footerShark {
+            width: 90vw;
+            height: 19vw;
+            right: 5vw;
+        }
     }
 
     .leftBox {
         max-width: 100%;
-        margin-bottom: 50px;
+        margin-top: 50px;
+        margin-bottom: 70px;
     }
 
     .copyRight {
         text-align: center;
+        margin-top: 100px;
+        position: relative;
+        z-index: 2;
     }
     .backgroundFx {
         animation-duration: 50s;
@@ -123,12 +156,11 @@
 
 @keyframes wave {
     0% {
-        background-position: 0% 0%;
-    }
-    50% {
-        background-position-x: 50%;
+        background-position: 50% 70%;
+        background-size: 160vw auto;
     }
     100% {
-        background-position: 0% 50%;
+        background-position: 70% 50%;
+        background-size: 140vw;
     }
 }

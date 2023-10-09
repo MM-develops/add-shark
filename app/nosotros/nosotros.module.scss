@@ -18,7 +18,7 @@
         text-transform: uppercase;
         font-weight: 900;
         font-family: $heading;
-        font-size: 40px;
+        font-size: 50px;
         color: $lightGreen;
     }
 
@@ -31,7 +31,6 @@
     }
     
     .mainText {
-        font-size: 22px;
         width: 70%;
         margin: auto auto 200px;
     }
@@ -120,7 +119,7 @@
         b {
             display: block;
             margin-bottom: 30px;
-            @include body-font;
+            font-size: 20px;
             color: $darkBlue;
         }
         span {

@@ -239,6 +239,29 @@
   padding: 50px 10%;
   overflow: hidden;
   position: relative;
+  padding-bottom: calc(100px + 6.7vw);
+  margin-bottom: -6.7vw;
+  z-index: -1;
+
+  .lightFlare {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70vh;
+    background-image: url('/rayodeluz1.svg');
+  }
+  .wave{
+    position: absolute;
+    top: 20vh;
+    left: 0;
+    width: 100vw;
+    height: 80vh;
+    background-image: url('/footer_fx.png');
+    background-size: 110vw auto;
+    background-position: -5vw 0%;
+  }
+
   h1 {
     text-align: center;
     font-size: 60px;
@@ -246,6 +269,7 @@
     font-weight: 900;
     margin-bottom: 20px;
     margin-top: 45vh;
+    position: relative;
   }
 
   .tag {
@@ -255,13 +279,19 @@
     max-width: 60%;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
   }
+}
+
+.olita {
+  display: block;
+  margin: 100px auto 0;
 }
 
 .numberRow {
   display: flex;
   justify-content: space-around;
-  margin: 180px 0 90px;
+  margin: 150px 0 90px;
 }
 .numberSign {
   font-size: 30px;
@@ -280,38 +310,6 @@
 
 .pillButton {
   margin-top: 35px;
-}
-
-.rock1 {
-  position: absolute;
-  background-image: url('/rock1.png');
-  background-size: cover;
-  width: 37%;
-  height: 80%;
-  top: calc(20% + 50px);
-  right: -12.6%;
-}
-.rock2 {
-  position: absolute;
-  background-image: url("/rock2.png");
-  background-size: cover;
-  background-position: 100%;
-  background-repeat: no-repeat;
-  width: 39%;
-  height: 80%;
-  top: calc(20% + 50px);
-  left: -13%;
-}
-
-.rockBg {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  height: 20vw;
-  background-image: url('/rock_bg.png');
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .services {

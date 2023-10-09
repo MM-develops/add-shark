@@ -33,7 +33,7 @@ $mobileSize: 764px;
 }
 
 @mixin white-link {
-    @include link(white, $mainBlue);
+    @include link(white, $lightGreen);
 }
 
 @mixin blue-link {
@@ -42,9 +42,22 @@ $mobileSize: 764px;
 
 @mixin body-font {
     font-family: $body;
-    font-size: 20px;
+    font-size: 25px;
 }
 
+@mixin black-outline {
+    &:focus {
+        outline: 2px solid $black;
+        outline-offset: 2px;
+    }
+}
+
+@mixin wave-outline {
+    margin-left: -2px;
+    margin-bottom: -5px;
+    width: calc(100vw + 2px);
+    height: 6.7vw;
+}
 .blockCenter{
     margin:auto;
     display: block;

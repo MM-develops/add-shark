@@ -2,7 +2,7 @@
 import Link from "next/link"
 import React, { useState } from "react"
 import styles from './Header.module.scss'
-import { Button } from './Button'
+import { AnchorButton } from './Button'
 import Image from "next/image"
 
 export const Header = () => {
@@ -10,18 +10,25 @@ export const Header = () => {
     const onToggleClick = () => {
         toggleMenu(!menu);
     }
-    const hamburgerMenu = <div className={styles.hamButton} onClick={onToggleClick}></div>
+    const hamburgerMenu = <button className={styles.hamButton} onClick={onToggleClick}>
+        <Image
+            src='/menuburger.svg'
+            alt=""
+            width={50}
+            height={30}
+        />
+    </button>
     const mobileNav = <div className={`${styles.mobileNav} ${menu ? styles.open : styles.close}`}>
         <button className={styles.closeBtn} onClick={onToggleClick}>X</button>
         <nav>
             <Link href="/nosotros" className={styles.navLink} onClick={onToggleClick}>Nosotros</Link>
             <Link href="/servicios" className={styles.navLink} onClick={onToggleClick}>Servicios</Link>
-            <Link href="/contacto" onClick={onToggleClick}><Button className={styles.navButton}>Quiero trabajar con ustedes</Button></Link>
+            <AnchorButton href="/contacto" className={styles.navButton}>Quiero trabajar con ustedes</AnchorButton>
         </nav>
     </div>
 
     return <header className={styles.header}>
-        <Link href="/">
+        <Link href="/" className={styles.homeButton}>
             <Image
                 src="/adshark_logo_navbar.svg"
                 alt="Addshark home page"
@@ -32,12 +39,11 @@ export const Header = () => {
             />
         </Link>
         {hamburgerMenu}
-        {mobileNav}
+        {menu && mobileNav}
         <nav className={styles.desktopNav}>
             <Link href="/nosotros" className={styles.navLink}>Nosotros</Link>
             <Link href="/servicios" className={styles.navLink}>Servicios</Link>
-            <Link href="/contacto" className={styles.navLink}>Contacto</Link>
-            <Link href="/contacto"><Button className={styles.navButton}>Quiero trabajar con ustedes</Button></Link>
+            <AnchorButton href="/contacto" className={styles.navButton}>Quiero trabajar con ustedes</AnchorButton>
         </nav>
     </header>
 }

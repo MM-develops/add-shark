@@ -14,6 +14,7 @@ export default function Contact() {
         </Row>
         <Row color="blue">
             <PillBox>
+                <h2 className="form-header">Cuentanos sobre tu proyecto</h2>
                 <label htmlFor='nombre'>Nombre</label>
                 <input type='text' name='nombre'/>
                 <label htmlFor='tel'>Telefono</label>

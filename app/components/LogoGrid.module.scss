@@ -1,7 +1,16 @@
 @import './globals.scss';
 
+.wave1 {
+    fill: $lightBlue;
+    @include wave-outline;
+}
+.wave2 {
+    fill: $mainBlue;
+    @include wave-outline;
+    transform: rotateZ(180deg);
+}
 .main {
-    padding-top: 100px;
+    padding-top: 50px;
     color: white;
     background-color: $lightBlue;
     background: linear-gradient(0deg, $mainBlue 0%, $lightBlue 100%);

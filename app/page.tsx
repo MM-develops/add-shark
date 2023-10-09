@@ -12,9 +12,12 @@ export default function Home() {
     <main className={styles.main}>
       <Header/>
       <div className={`${styles.row}`}>
+        <div className={styles.lightFlare}></div>
+        <div className={styles.wave}></div>
         <h1>TIBURONES QUE VENDEN</h1>
         <p className={styles.tag}>Rentabilidades inigualables y posibilidades publicitarias ilimitadas con nuestro equipo de veteranos</p>
         <AnchorButton href="/contacto" className={styles.blockCenter}>Solicita más información</AnchorButton>
+        <Image src={'/olita.svg'} alt='' width={100} height={20} className={styles.olita}/>
         <div className={styles.numberRow}>
           <p className={styles.numberSign}>
             <span>25+</span><br></br>
@@ -25,14 +28,11 @@ export default function Home() {
             Campañas exitosas
           </p>
         </div>
-        <div className={styles.rockBg}></div>
         <PillBox>
           <h3 className={styles.pillTitle}>¡Bienvenido a AdShark Digital Agency!</h3>
           <p>Somos una agencia de publicidad que navega en las profundidades del océano digital para ayudar a las empresas a alcanzar su máximo potencial en línea. Somos un equipo de tiburones especializados en el marketing digital enfocándonos en los anuncios pagados.</p>
           <p>En Ad Shark, nuestro equipo está compuesto por expertos en publicidad en línea, estrategas de marketing, diseñadores gráficos y especialistas en análisis de datos, todos unidos en una sola dirección: impulsar el crecimiento y el éxito de nuestros clientes.</p>
           <AnchorButton href="/servicios" className={`${styles.blockCenter} ${styles.pillButton}`}>Conoce más de AdShark</AnchorButton>
-          <div className={styles.rock1}></div>
-          <div className={styles.rock2}></div>
         </PillBox>
       </div>
       <LogoGrid title="Algunos de nuestros Sharks" />

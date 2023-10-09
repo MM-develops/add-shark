@@ -12,7 +12,7 @@ a.button{
     transition: 0.5s ease color;
     transition: 0.5s ease background;
     font-family: $heading;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 20px;
     display: inline-block;
 
@@ -43,11 +43,11 @@ a.button{
     &.secondary {
         color: $mainBlue;
         border-color: transparent;
-        background-color: #ffffff75;
+        background-color: #ffffffb6;
 
         &:hover,
         &:focus {
-            background-color: #ffffffbf;
+            background-color: #ffffffe0;
         }
     }
 }
