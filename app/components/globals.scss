@@ -43,6 +43,10 @@ $mobileSize: 764px;
 @mixin body-font {
     font-family: $body;
     font-size: 25px;
+
+    @media (max-width: $mobileSize) {
+        font-size: 16px;
+    }
 }
 
 @mixin black-outline {

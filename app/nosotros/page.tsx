@@ -6,6 +6,7 @@ import { Footer } from '../components/Footer'
 import { Row } from '../components/Row'
 import Image from 'next/image'
 import { LogoGrid } from '../components/LogoGrid'
+import { Waves } from '../components/Graphics'
 
 export default function Nosotros() {
     return (
@@ -16,6 +17,7 @@ export default function Nosotros() {
                 <h1>AD Shark<br/>Digital Agency</h1>
                 <p className={styles.mainText}>Una agencia de publicidad que navega en las profundidades del oceano digital para ayudar a las empresas a alcanzar su maximo potencial en linea.</p>
             </Row>
+            <Waves className={styles.wave}/>
             <Row color="blue" className={styles.row2}>
                 <p>Al igual que los tiburones en el oceano, en Ad Shark nos vemos rapidamente y de manera eficiente para ayudar a las empresas a crecer y alcanzar sus objetivos comerciales. Ofrecemos una amplia gama de servicios de marketing digital, como la gestion de redes sociales, email marketing, SEO y, por supuesto, anuncios pagados. Sin embargo, nuestra pasion y enfoque principal es la generacion de prospectos con anuncios pagados, ya que nos permiten llevar a nuestros clientes hacia el exito en linea</p>
             </Row>
@@ -58,14 +60,35 @@ export default function Nosotros() {
                     <PillBox type="shadow">
                         <b>&quot;Gracias al equipo de Ad Shark, hemos identificado tendencias e insights valiosos que aplican en nuestra industria, el dia de hoy tenemos presencia digital y clientes en todo Estados Unidos gracias a las campañas que hemos realizado en conjunto.&quot;</b>
                         <span>Luis Felipe Osuna, Co-founder<br/>Urban Capital</span>
+                        <Image
+                            src="/UC2.png"
+                            alt=""
+                            width={98}
+                            height={77}
+                            loading='lazy'
+                        />
                     </PillBox>
                     <PillBox type="shadow">
                         <b>&quot;Ad Shark Digital es de las pocas empresas con las que hemos tratado en donde puede comprobar de forma medible los resultados que nos genera. Gracias a sus anuncios pagados en linea, hemos aumentado constantemente nuestra matricula en nuestras insitituciones educativas.&quot;</b>
                         <span>Jorge Velasquez, Director Administrativo<br/>Colegio Real de Minas</span>
+                        <Image
+                            src="/CRM2.png"
+                            alt=""
+                            width={90}
+                            height={90}
+                            loading='lazy'
+                        />
                     </PillBox>
                     <PillBox type="shadow">
                         <b>&quot;Tenemos una relacion laboral de casi 3 años, desde el principio Ad Shark ha sido una parte fundamental en nuestras estrategias y planes comerciales para el crecimiento de la marca. Han manejado para nosotros todas nuestras campañas de generación de prospectos, asi como el analisis y la interpretación de toda a la analítica  de algoritmos de las plataformas digitales para nuevas zonas de interés y áreas con oportunidad de expansion.&quot;</b>
                         <span>Fernando Arredondo, Director de Expansión y Crecimiento<br/>SIMAS Farmacias</span>
+                        <Image
+                            src="/SF2.png"
+                            alt=""
+                            width={110}
+                            height={35}
+                            loading='lazy'
+                        />
                     </PillBox>
                 </div>
             </Row>
