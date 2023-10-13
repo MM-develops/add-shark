@@ -3,9 +3,10 @@ import styles from './Modal.module.scss';
 
 export const Modal = (props) => {
     return <div className={`${styles.background} ${props.isOpen && styles.open}`}>
-        <div className={styles.content}>
+        <div className={styles.contentContainer}>
             <button className={styles.close} onClick={props.onClose}>x</button>
-            {props.children}
+            <h2 className={styles.modalTitle}>{props.title}</h2>
+            <div className={styles.content}>{props.children}</div>
         </div>
     </div>
 }
