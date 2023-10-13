@@ -1,3 +1,4 @@
+'use client'
 import './servicios.scss';
 import { Header } from "../components/Header";
 import { Row } from "../components/Row";
@@ -5,13 +6,16 @@ import { PillBox } from '../components/PillBox';
 import Image from 'next/image';
 import { Button } from '../components/Button';
 import { Footer } from '../components/Footer';
+import { Modal } from '../components/Modal.jsx';
+import { useState } from 'react';
+import { seo, emailMarketing, socialMedia } from './serviceData';
 
 export default function Servicios() {
+    const [isOpen, toggleOpen] = useState(false);
+    const [modalContent, setModalContent] = useState("");
     return (
         <main>
             <Header />
-            <div className='coral-wall'></div>
-            <div className='sharks'></div>
             <Row color="blue" className="services-main-row">
                 <h1 className="services-header">Navega con Ad Shark en las profundidades del océano digital</h1>
             </Row>
@@ -74,6 +78,7 @@ export default function Servicios() {
                 <div className={"rock2"}></div>
             </Row>
             <Footer background="blue"/>
+            <Modal isOpen={true} onClose={()=>{ console.log('hello')}}>{socialMedia}</Modal>
         </main>
     )
 }

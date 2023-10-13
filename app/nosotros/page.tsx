@@ -1,7 +1,7 @@
 import styles from './nosotros.module.scss'
 import { Header } from '../components/Header'
 import { PillBox } from '../components/PillBox'
-import { AnchorButton, Button } from '../components/Button'
+import { AnchorButton } from '../components/Button'
 import { Footer } from '../components/Footer'
 import { Row } from '../components/Row'
 import Image from 'next/image'

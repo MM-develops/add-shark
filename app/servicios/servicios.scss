@@ -1,5 +1,12 @@
 @import '../components/globals.scss';
 
+.services-main-row {
+    background-image: url('/rayodeluz2.svg');
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    background-size: auto 108%;
+}
+
 .services-header {
     width: 65%;
     display: inline-block;
@@ -9,27 +16,6 @@
     margin: 150px 0;
     position: relative;
     z-index: 2;
-}
-
-.coral-wall {
-    height: 100vh;
-    width: 40vw;
-    background-image: url('/arrecife_wall1.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 0;
-}
-
-.sharks {
-    width: 30vw;
-    height: 50vh;
-    position: absolute;
-    top: 64px;
-    right: 0;
-    background-image: url('/adshark_sharks2.png');
-    background-size: 50vw auto;
-    background-repeat: no-repeat;
 }
 
 .service-container {
