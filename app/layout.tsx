@@ -1,7 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Epilogue, Roboto } from 'next/font/google'
-import Head from 'next/head';
 
 const epilogue = Epilogue({ 
   weight: "400", 

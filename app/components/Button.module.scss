@@ -49,6 +49,7 @@ a.button{
         &:hover,
         &:focus {
             background-color: #ffffffe0;
+            color: $mainBlue;
         }
     }
 }

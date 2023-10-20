@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from './Button'
+import { AnchorButton } from './Button'
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from './footer.module.scss'
@@ -14,7 +14,7 @@ export const Footer = (props: { background?: string }) => {
             <div className={styles.footerContent}>
                 <div className={styles.leftBox}>
                     <h2>Déjanos ser tu guía en este océano digital</h2>
-                    <Button type="secondary">&iexcl;Contactanos&#33;</Button>
+                    <AnchorButton href="/contacto" type="secondary">&iexcl;Contactanos&#33;</AnchorButton>
                 </div>
                 <div className={styles.divider}></div>
                 <div className={styles.rightBox}>

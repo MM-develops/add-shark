@@ -1,0 +1,31 @@
+@import '../components/globals';
+
+.title {
+    margin-top: 200px;
+    margin-bottom: 10px;
+    font-family: $heading;
+    font-size: 80px;
+}
+
+p {
+    @include body-font;
+}
+
+.wave {
+    fill: $mainBlue;
+    @include wave-outline;
+    transform: rotateZ(180deg);
+}
+
+.row2 {
+    p {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: $mobileSize){
+    .title {
+        font-size: 45px;
+        margin-top: 150px;
+    }
+}

@@ -1,0 +1,12 @@
+@import './globals.scss';
+
+.form{
+    label span {
+        display: none;
+    }
+    label span.error{
+        display: inline;
+        color: darkred;
+        float: right;
+    }
+}
