@@ -4,7 +4,7 @@ import { Header } from "../components/Header";
 import { Row } from "../components/Row";
 import { PillBox } from '../components/PillBox';
 import Image from 'next/image';
-import { Button } from '../components/Button';
+import { AnchorButton, Button } from '../components/Button';
 import { Footer } from '../components/Footer';
 import { Modal } from '../components/Modal.jsx';
 import { useState } from 'react';
@@ -41,7 +41,7 @@ export default function Servicios() {
                         <div className='services-copy'>
                             <h3>Anuncios Pagados / Publicidad en línea</h3>
                             <p>Somos expertos en Anuncios Pagados, y nos gusta pensar en nosotros mismos como tiburones que nadan en el vasto océano de la publicidad en línea </p>
-                            <Button>Conoce Más</Button>
+                            <AnchorButton href="/ads">Conoce Más</AnchorButton>
                         </div>
                     </div>
                     <div className='service-container'>
