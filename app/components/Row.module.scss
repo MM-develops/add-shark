@@ -9,6 +9,11 @@
         color: white;
     }
 
+    &.cream {
+        background-color: $cream;
+        color: $darkBlue;
+    }
+
     h3 {
         font-family: $heading;
         text-align: center;

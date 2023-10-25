@@ -11,6 +11,8 @@ $mainBlue: #0C46EB;
 $lightBlue: #72A9F8;
 $lightGreen: #84FaF8;
 $yellow: #E8C545;
+$cream: #f2f3f3;
+$grey: #e6e7e8;
 
 
 $mobileSize: 764px;
@@ -47,6 +49,11 @@ $mobileSize: 764px;
     @media (max-width: $mobileSize) {
         font-size: 16px;
     }
+}
+
+@mixin heading-font {
+    font-family: $heading;
+    font-weight: 900;
 }
 
 @mixin black-outline {

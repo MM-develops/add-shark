@@ -234,40 +234,13 @@
 }
 
 .row{
-  background-color: $mainBlue;
-  color: white;
-  padding: 50px 10%;
-  overflow: hidden;
-  position: relative;
-  padding-bottom: calc(100px + 6.7vw);
+  padding-bottom: calc(100px + 6.7vw) !important;
   margin-bottom: -6.7vw;
-  z-index: -1;
-
-  .lightFlare {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 70vh;
-    background-image: url('/rayodeluz1.svg');
-  }
-  .wave{
-    position: absolute;
-    top: 20vh;
-    left: 0;
-    width: 100vw;
-    height: 80vh;
-    background-image: url('/footer_fx.png');
-    background-size: 110vw auto;
-    background-position: -5vw 0%;
-    background-repeat: no-repeat;
-  }
 
   h1 {
+    @include heading-font;
     text-align: center;
     font-size: 60px;
-    font-family: $heading;
-    font-weight: 900;
     margin-bottom: 20px;
     margin-top: 45vh;
     position: relative;
@@ -286,23 +259,53 @@
 
 .olita {
   display: block;
-  margin: 100px auto 0;
+  margin: 70px auto 0;
+  width: 150px;
+  fill: $darkBlue;
 }
 
 .numberRow {
   display: flex;
-  justify-content: space-around;
-  margin: 150px 0 90px;
+  justify-content: center;
+  gap: 10%;
+  margin: 150px 0 190px;
 }
 .numberSign {
   font-size: 30px;
   font-family: $heading;
-  font-weight: 900;
+  font-weight: 600;
   width: 202px;
   margin: 0 30px;
-  span {
-    font-size: 80px;
+  text-align: center;
+  color: $mainBlue;
+  position: relative;
+
+  &:before {
+    content: '';
+    width: 202px;
+    height: 202px;
+    background-color: rgba($lightGreen, 0.4);
+    display: block;
+    position: absolute;
+    border-radius: 100%;
+    top: -30px;
   }
+
+  span {
+    font-family: $heading;
+    font-size: 80px;
+    font-weight: 900;
+    position: relative;
+
+    &::after {
+      content: '+';
+      position: absolute;
+    }
+  }
+}
+
+.pillBox p {
+  margin-bottom: 1em;
 }
 
 .pillTitle {

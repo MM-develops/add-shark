@@ -6,37 +6,36 @@ import { Row } from './components/Row'
 import { AnchorButton, Button } from './components/Button'
 import { PillBox } from './components/PillBox'
 import { LogoGrid } from './components/LogoGrid'
+import { MiniWave } from './components/Graphics'
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <main>
       <Header/>
-      <div className={`${styles.row}`}>
-        <div className={styles.lightFlare}></div>
-        <div className={styles.wave}></div>
+      <Row color='cream' className={`${styles.row}`}>
         <h1>TIBURONES QUE VENDEN</h1>
         <p className={styles.tag}>Rentabilidades inigualables y posibilidades publicitarias ilimitadas con nuestro equipo de veteranos</p>
         <AnchorButton href="/contacto" className={styles.blockCenter}>Solicita más información</AnchorButton>
-        <Image src={'/olita.svg'} alt='' width={100} height={20} className={styles.olita}/>
+        <MiniWave className={styles.olita}/>
         <div className={styles.numberRow}>
           <p className={styles.numberSign}>
-            <span>25+</span><br></br>
+            <span>25</span><br/>
             Clientes satisfechos
           </p>
           <p className={styles.numberSign}>
-            <span>300+</span><br></br>
+            <span>300</span><br/>
             Campañas exitosas
           </p>
         </div>
-        <PillBox>
+        <PillBox className={styles.pillBox}>
           <h3 className={styles.pillTitle}>¡Bienvenido a AdShark Digital Agency!</h3>
           <p>Somos una agencia de publicidad que navega en las profundidades del océano digital para ayudar a las empresas a alcanzar su máximo potencial en línea. Somos un equipo de tiburones especializados en el marketing digital enfocándonos en los anuncios pagados.</p>
           <p>En Ad Shark, nuestro equipo está compuesto por expertos en publicidad en línea, estrategas de marketing, diseñadores gráficos y especialistas en análisis de datos, todos unidos en una sola dirección: impulsar el crecimiento y el éxito de nuestros clientes.</p>
           <AnchorButton href="/servicios" className={`${styles.blockCenter} ${styles.pillButton}`}>Conoce más de AdShark</AnchorButton>
         </PillBox>
-      </div>
+      </Row>
       <LogoGrid title="Algunos de nuestros Sharks" />
-      <Row>
+      <Row className={styles.row2}>
         <h3>Entre tiburones nos ayudamos</h3>
         <div className={styles.services}>
           <PillBox type="blue" className={styles.pill}>

@@ -12,7 +12,7 @@ export default function Nosotros() {
     return (
         <main>
             <Header/>
-            <Row color="blue" className={styles.row1}>
+            <Row color="cream" className={styles.row1}>
                 <p className={styles.tag}>Somos</p>
                 <h1>AD Shark<br/>Digital Agency</h1>
                 <p className={styles.mainText}>Una agencia de publicidad que navega en las profundidades del oceano digital para ayudar a las empresas a alcanzar su maximo potencial en linea.</p>
@@ -21,7 +21,7 @@ export default function Nosotros() {
             <Row color="blue" className={styles.row2}>
                 <p>Al igual que los tiburones en el oceano, en Ad Shark nos vemos rapidamente y de manera eficiente para ayudar a las empresas a crecer y alcanzar sus objetivos comerciales. Ofrecemos una amplia gama de servicios de marketing digital, como la gestion de redes sociales, email marketing, SEO y, por supuesto, anuncios pagados. Sin embargo, nuestra pasion y enfoque principal es la generacion de prospectos con anuncios pagados, ya que nos permiten llevar a nuestros clientes hacia el exito en linea</p>
             </Row>
-            <LogoGrid className={styles.logoGrid} title="Nuestro grupo de sharks"/>
+            <LogoGrid className={styles.logoGrid} waveClass={styles.logoWave} title="Nuestro grupo de sharks"/>
             <Row className={styles.row4}>
                 <p className={styles.whiteText}>En Ad Shark, nuestro equipo está compuesto por expertos en publicidad en línea, estrategas de marketing, diseñadores gráficos y especialistas en análisis de datos, todos unidos en una sola dirección: impulsar el crecimiento y el éxito de nuestros clientes.</p>
                 <div className={styles.pillBoxGrid}>

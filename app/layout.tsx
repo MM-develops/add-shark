@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import { Epilogue, Roboto } from 'next/font/google'
 
 const epilogue = Epilogue({ 
-  weight: "400", 
+  weight: ['600','900'], 
   subsets: ['latin'],
   variable: '--font-epilogue'
  });

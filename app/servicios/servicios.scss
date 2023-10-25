@@ -1,12 +1,9 @@
 @import '../components/globals.scss';
 
 .services-main-row {
-    background-image: url('/rayodeluz2.svg');
-    background-repeat: no-repeat;
-    background-position: 100% 0%;
-    background-size: auto 108%;
     padding-bottom: calc(6.7vw + 50px) !important;
     margin-bottom: -6.7vw;
+    color: $mainBlue !important;
 }
 
 .services-header {
@@ -51,9 +48,8 @@
 
 .rocky-row {
     position: relative;
-    background: linear-gradient(0deg, $mainBlue 30%, $lightBlue 100%);
+    background: linear-gradient(0deg, $cream 30%, $lightBlue 100%);
     padding-bottom: calc(50px + 6.7vw) !important;
-    margin-bottom: -6.7vw;
 }
 
   @media (max-width: $mobileSize) {

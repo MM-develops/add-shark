@@ -23,7 +23,7 @@ export default function Servicios() {
     return (
         <main>
             <Header />
-            <Row color="blue" className="services-main-row">
+            <Row color="cream" className="services-main-row">
                 <h1 className="services-header">Navega con Ad Shark en las profundidades del océano digital</h1>
             </Row>
             <Waves className='wave'/>
@@ -85,7 +85,7 @@ export default function Servicios() {
                     </div>
                 </PillBox>
             </Row>
-            <Footer background="blue"/>
+            <Footer background="cream"/>
             <Modal title={modalContent.title} isOpen={isOpen} onClose={()=>{toggleOpen(false)}}>{modalContent.content}</Modal>
         </main>
     )

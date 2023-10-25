@@ -7,9 +7,9 @@ const images = require.context('../../public/logos', true);
 const imageList = images.keys().map(image => images(image));
 //console.log(images.keys())
 
-export const LogoGrid = (props: { className?: string; title?: string }) => {
+export const LogoGrid = (props: { className?: string; title?: string, waveClass?: string }) => {
     return <>
-        <Waves className={styles.wave1}/>
+        <Waves className={`${styles.wave1} ${props.waveClass}`}/>
         <div className={`${styles.main} ${props.className}`}>
             <h3>{props.title}</h3>
             <div className={styles.gridContainer}>
@@ -26,6 +26,6 @@ export const LogoGrid = (props: { className?: string; title?: string }) => {
                 })}
             </div>
         </div>
-        <Waves className={styles.wave2}/>
+        <Waves className={`${styles.wave2} ${props.waveClass}`}/>
     </>
 }

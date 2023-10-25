@@ -9,15 +9,22 @@
 }
 
 .contact-tag {
-    color: $lightGreen;
+    color: $mainBlue;
     font-weight: 600;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: calc(100px + 6.7vw);
+}
+
+.wave{
+    @include wave-outline;
+    fill: $lightBlue;
+    margin-top: -6.7vw;
 }
 
 .main-row {
     padding-bottom: calc(100px + 6.7vw) !important;
-    margin-bottom: -6.7vw;
+    background-color: $lightBlue;
+    background: linear-gradient(180deg, $lightBlue 0%, $cream 70%);
 }
 
 .form-header {

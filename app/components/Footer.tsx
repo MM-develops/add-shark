@@ -8,8 +8,8 @@ import { Waves } from './Graphics'
 export const Footer = (props: { background?: string }) => {
     const backgroundColor = props.background ? props.background : 'white';
     return <>
-        <Waves className={styles.waves}/>
-        <footer className={`${styles.footer} ${styles[backgroundColor]}`}>
+        <Waves className={`${styles.waves} ${styles[backgroundColor]}`}/>
+        <footer className={styles.footer}>
             <div className={styles.backgroundFx}></div>
             <div className={styles.footerContent}>
                 <div className={styles.leftBox}>

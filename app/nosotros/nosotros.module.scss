@@ -1,16 +1,6 @@
 @import '../components/globals.scss';
 
 .row1 {
-    background-color: $mainBlue;
-    background-image: url('/burbujas.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    animation-name: bubble;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-in-out;
-    color: white;
     text-align: center;
 
     .tag {
@@ -24,16 +14,18 @@
     }
 
     h1 {
+        @include heading-font;
         font-size: 100px;
         line-height: 1em;
-        font-family: $heading;
         text-transform: uppercase;
         margin-bottom: 10px;
+        color: $mainBlue;
     }
     
     .mainText {
         width: 70%;
         margin: auto auto 200px;
+        color: $mainBlue;
     }
 }
 .wave {
@@ -44,18 +36,21 @@
 
 .logoGrid {
     margin-top: -6.7vw;
-    background: $mainBlue !important;
+    background: $cream !important;
 
-    h3 {
-        color: $lightGreen;
+    img {
+        filter: invert(1) grayscale(1);
     }
+}
+.logoWave {
+    fill: $cream !important;
 }
 
 .row2 {
     padding: 50px 10%;
-    color: white;
+    color: $darkBlue !important;
     background-color: $lightBlue;
-    background: linear-gradient(180deg, $lightBlue 0%, $mainBlue 100%);
+    background: linear-gradient(180deg, $lightBlue 0%, $cream 100%);
     text-align: center;
     @include body-font;
 
@@ -210,15 +205,5 @@
                 margin-left: auto;
             }
         }
-    }
-}
-
-@keyframes bubble {
-    0%{
-        background-size: 100% auto;
-    }
-   
-    100%{
-        background-size: 80% auto;
     }
 }
