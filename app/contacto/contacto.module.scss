@@ -1,6 +1,6 @@
 @import '../components/globals.scss';
 
-.contact-header {
+.contactheader {
     font-size: 60px;
     font-family: $heading;
     text-align: center;
@@ -8,7 +8,7 @@
     margin: 250px 0 20px;
 }
 
-.contact-tag {
+.contacttag {
     color: $mainBlue;
     font-weight: 600;
     text-align: center;
@@ -21,13 +21,13 @@
     margin-top: -6.7vw;
 }
 
-.main-row {
+.mainrow {
     padding-bottom: calc(100px + 6.7vw) !important;
     background-color: $lightBlue;
     background: linear-gradient(180deg, $lightBlue 0%, $cream 70%);
 }
 
-.form-header {
+.formheader {
     font-family: $heading;
     font-size: 35px;
     color: $darkBlue;
@@ -35,55 +35,15 @@
     margin-bottom: 60px;
 }
 
-label {
-    display: block;
-    font-family: $body;
-    font-size: 20px;
-}
-input,
-select,
-textarea {
-    display: block;
-    width: 100%;
-    padding: 10px 10px;
-    font-family: $body;
-    font-size: 20px;
-    margin-bottom: 30px;
-}
-
-.contact-send {
-    margin: 50px auto 0;
-    display: block;
-    width: 70%;
-}
-
 @media (max-width: $mobileSize) {
-    .contact-header {
+    .contactheader {
         font-size: 25px;
         line-height: 1.3em;
         margin: 150px 0 20px;
     }
 
-    .contact-tag {
+    .contacttag {
         font-size: 16px;
         margin-bottom: 50px;
-    }
-
-    label {
-        font-size: 16px;
-        margin-bottom: 5px;
-    }
-
-    input,
-    select,
-    textarea {
-        padding: 5px;
-        font-size: 14px;
-        margin-bottom: 10px;
-    }
-    
-    .contact-send {
-        margin-top: 20px;
-        width: 100%;
     }
 }

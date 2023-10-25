@@ -70,6 +70,6 @@ export const ContactForm = () => {
         </select>
         <label htmlFor='message'>Mensaje</label>
         <textarea name='message' rows={5} onChange={(e) => {handleTextChange(e, 'message')}} value={formInput.message}/>
-        <Button className="contact-send" onClick={handleSubmit}>Enviar</Button>
+        <Button className={styles.contactsend} onClick={handleSubmit}>Enviar</Button>
     </form>
 }

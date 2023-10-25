@@ -1,12 +1,59 @@
 @import './globals.scss';
 
 .form{
-    label span {
-        display: none;
+
+    label {
+        display: block;
+        font-family: $body;
+        font-size: 20px;
+
+        span {
+            display: none;
+        
+            &.error{
+                display: inline;
+                color: darkred;
+                float: right;
+            }
+        }
     }
-    label span.error{
-        display: inline;
-        color: darkred;
-        float: right;
+    input,
+    select,
+    textarea {
+        display: block;
+        width: 100%;
+        padding: 10px 10px;
+        font-family: $body;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .contactsend {
+        margin: 50px auto 0;
+        display: block;
+        width: 70%;
+    }
+}
+
+@media (max-width: $mobileSize) {
+    .form {
+        label {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+    
+        input,
+        select,
+        textarea {
+            padding: 5px;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .contactsend {
+            margin-top: 20px;
+            width: 100%;
+        }
+        
     }
 }

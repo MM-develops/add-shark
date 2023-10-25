@@ -342,12 +342,21 @@
         font-size: 35px;
         margin-top: 150px;
       }
+      
+      .olita {
+        width: 80px;
+      }
     }
 
     .numberSign {
       font-size: 16px;
       width: 80px;
       margin: 0 30px;
+      &::before {
+        width: 80px;
+        height: 80px;
+        top: 0;
+      }
       span {
         font-size: 30px;
       }
