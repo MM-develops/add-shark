@@ -237,6 +237,19 @@
   padding-bottom: calc(100px + 6.7vw) !important;
   margin-bottom: -6.7vw;
 
+  .tiburones1{
+    position: absolute;
+    right: 0;
+    opacity: 0.1;
+  }
+
+  .tiburones2{
+    position: absolute;
+    opacity: 0.1;
+    top: 350px;
+    left: 0;
+  }
+
   h1 {
     @include heading-font;
     text-align: center;

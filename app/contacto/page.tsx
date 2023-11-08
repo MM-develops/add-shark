@@ -9,7 +9,7 @@ import { Waves } from '../components/Graphics';
 export default function Contact() {
     return <main>
         <Header/>
-        <Row color="cream">
+        <Row color="cream" className={styles.sharks}>
             <h1 className={styles.contactheader}>¡Descubramos las oportunidades que el océano digital tiene para ti!</h1>
             <p className={styles.contacttag}>¡Nuestro equipo de tiburones del marketing está esperando para hundirse contigo en las profundidades del marketing digital y ayudarte a conquistar tu mercado!</p>
         </Row>

@@ -24,6 +24,13 @@ export default function Servicios() {
         <main>
             <Header />
             <Row color="cream" className="services-main-row">
+                <Image
+                    src="tiburonesfull.svg"
+                    alt=''
+                    width={500}
+                    height={500}
+                    className='services-bg-sharks'
+                />
                 <h1 className="services-header">Navega con Ad Shark en las profundidades del océano digital</h1>
             </Row>
             <Waves className='wave'/>

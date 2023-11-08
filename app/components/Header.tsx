@@ -30,7 +30,7 @@ export const Header = () => {
     return <header className={styles.header}>
         <Link href="/" className={styles.homeButton}>
             <Image
-                src="/adshark_logo_navbar.svg"
+                src="/logo-adshark-blanco.svg"
                 alt="Addshark home page"
                 className={styles.logo}
                 width={30}

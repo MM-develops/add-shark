@@ -1,5 +1,12 @@
 @import '../components/globals.scss';
 
+.sharks {
+    background-image: url('/tiburones1.svg'), url('/tiburones2.svg');
+    background-repeat: no-repeat;
+    background-size: 30vw 30vw, 15vw 15vw;
+    background-position: top right, 0% 90%;
+}
+
 .contactheader {
     font-size: 60px;
     font-family: $heading;

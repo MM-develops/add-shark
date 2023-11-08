@@ -4,6 +4,13 @@
     padding-bottom: calc(6.7vw + 50px) !important;
     margin-bottom: -6.7vw;
     color: $mainBlue !important;
+    background-image: url('/pared1.svg');
+    background-repeat: no-repeat;
+
+    .services-bg-sharks {
+        position: absolute;
+        right: 0;
+    }
 }
 
 .services-header {

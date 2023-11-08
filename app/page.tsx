@@ -13,6 +13,20 @@ export default function Home() {
     <main>
       <Header/>
       <Row color='cream' className={`${styles.row}`}>
+        <Image
+          src='tiburones1.svg'
+          alt=''
+          width={500}
+          height={500}
+          className={styles.tiburones1}
+        />
+        <Image
+          src='tiburones2.svg'
+          alt=''
+          width={500}
+          height={500}
+          className={styles.tiburones2}
+        />
         <h1>TIBURONES QUE VENDEN</h1>
         <p className={styles.tag}>Rentabilidades inigualables y posibilidades publicitarias ilimitadas con nuestro equipo de veteranos</p>
         <AnchorButton href="/contacto" className={styles.blockCenter}>Solicita más información</AnchorButton>
